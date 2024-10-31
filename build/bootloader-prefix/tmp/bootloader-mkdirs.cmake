@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "C:/Users/anda2/esp/v5.3.1/esp-idf/components/bootloader/subproject"
-  "C:/KS_Lab/simple/build/bootloader"
-  "C:/KS_Lab/simple/build/bootloader-prefix"
-  "C:/KS_Lab/simple/build/bootloader-prefix/tmp"
-  "C:/KS_Lab/simple/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/KS_Lab/simple/build/bootloader-prefix/src"
-  "C:/KS_Lab/simple/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/KS_Lab/Simple_server/build/bootloader"
+  "C:/KS_Lab/Simple_server/build/bootloader-prefix"
+  "C:/KS_Lab/Simple_server/build/bootloader-prefix/tmp"
+  "C:/KS_Lab/Simple_server/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/KS_Lab/Simple_server/build/bootloader-prefix/src"
+  "C:/KS_Lab/Simple_server/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/KS_Lab/simple/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/KS_Lab/Simple_server/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/KS_Lab/simple/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/KS_Lab/Simple_server/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

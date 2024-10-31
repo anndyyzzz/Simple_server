@@ -1780,7 +1780,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\anda2\.espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\KS_Lab\simple -BC:\KS_Lab\simple\build
+  command = C:\Users\anda2\.espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\KS_Lab\Simple_server -BC:\KS_Lab\Simple_server\build
   description = Re-running CMake...
   generator = 1
 
